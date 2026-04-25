@@ -1,10 +1,157 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Sun Life Metaverse</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sun Life Metaverse</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #14639b 0%, #0d3d61 100%);
+  color: white;
+}
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+.logo {
+  width: 160px;
+  margin-bottom: 20px;
+}
+h1 {
+  font-size: 3rem;
+  margin: 10px 0;
+}
+.highlight {
+  color: #ffc501;
+}
+p {
+  max-width: 750px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+.buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.btn {
+  padding: 14px 28px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+.primary {
+  background: #ffc501;
+  color: #111;
+}
+.primary:hover {
+  transform: translateY(-3px);
+}
+.secondary {
+  border: 2px solid white;
+  color: white;
+}
+.secondary:hover {
+  background: rgba(255,255,255,0.1);
+}
+.features {
+  background: white;
+  color: #222;
+  padding: 60px 20px;
+}
+.features h2 {
+  text-align: center;
+  color: #14639b;
+  font-size: 2rem;
+}
+.grid {
+  max-width: 1100px;
+  margin: 40px auto 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+.card {
+  background: #f8f8f8;
+  border-radius: 18px;
+  padding: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+.card h3 {
+  color: #14639b;
+}
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #0d3d61;
+}
+</style>
 </head>
 <body>
-  <h1>Sun Life Metaverse</h1>
-  <p>Immersive VR + Web solution for office navigation and onboarding.</p>
+
+<section class="hero">
+  <img src="resources/logo.png" class="logo" alt="Sun Life Metaverse Logo">
+  <h1>Sun Life <span class="highlight">Metaverse</span></h1>
+  <p>
+    Immersive VR + Web platform designed to improve office navigation, onboarding,
+    and hybrid workplace collaboration for Sun Life Waterford.
+  </p>
+
+  <div class="buttons">
+    <a href="https://github.com/MalgorzataVictor/Sun-Life-Metaverse" class="btn primary">View GitHub Repo</a>
+    <a href="#features" class="btn secondary">Explore Features</a>
+  </div>
+</section>
+
+<section class="features" id="features">
+  <h2>Platform Highlights</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>🌐 Web Experience</h3>
+      <p>Interactive Babylon.js office environment accessible directly in browser.</p>
+    </div>
+
+    <div class="card">
+      <h3>🥽 VR Experience</h3>
+      <p>Fully immersive Unity application for Meta Quest 3 headsets.</p>
+    </div>
+
+    <div class="card">
+      <h3>📍 Smart Navigation</h3>
+      <p>Search rooms instantly and generate intelligent routes to destinations.</p>
+    </div>
+
+    <div class="card">
+      <h3>🏢 Digital Twin</h3>
+      <p>Custom 3D recreation of the Sun Life Waterford office environment.</p>
+    </div>
+
+    <div class="card">
+      <h3>🚀 Innovation</h3>
+      <p>Combines immersive technology with real business value.</p>
+    </div>
+
+    <div class="card">
+      <h3>⚙️ Enterprise Ready</h3>
+      <p>Designed for secure internal deployment using company infrastructure.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Built by Malgorzata Victor • Software Systems Development</p>
+</footer>
+
 </body>
 </html>
